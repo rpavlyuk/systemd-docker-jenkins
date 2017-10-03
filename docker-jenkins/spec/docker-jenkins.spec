@@ -5,7 +5,7 @@
 # COMPATIBILITY FIX: Jenkins job name is neccessary to make build root unique (for CentOS5 and earlier)
 %{!?JOB_NAME:%define JOB_NAME standalone}
 
-Name:           docker-airvideoserver-hd
+Name:           docker-jenkins
 Version:        1.0
 Release:        %{svn_revision}%{?dist}
 Summary:        Docker container wrapper for Jenkins CI

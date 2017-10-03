@@ -9,7 +9,7 @@ CLEAN="no"
 MODE="fast"
 
 # Project name
-PROJECT="junkins"
+PROJECT="jenkins"
 
 # Build label. Will be used to mark the repository path.
 # It is recommended to have equal to the source code branch name.
