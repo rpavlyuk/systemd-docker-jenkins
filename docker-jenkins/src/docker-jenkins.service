@@ -1,0 +1,16 @@
+[Unit]
+Description=Jenkins in Docker container running as a service
+After=docker.service
+Requires=docker.service
+ 
+[Service]
+TimeoutStartSec=0
+Restart=no
+RestartSec=60s
+Type=simple
+NotifyAccess=all
+ExecStart=-/usr/bin/docker-jenkins
+ExecStop=/usr/bin/docker stop jenkins
+ 
+[Install]
+WantedBy=multi-user.target
